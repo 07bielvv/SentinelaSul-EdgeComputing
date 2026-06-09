@@ -1,189 +1,116 @@
-# 🚀 SentinelaSul - Estação de Alerta Orbital
+# 🚀 SentinelaSul
 
-## 📌 Sobre o Projeto
+## Sistema de Alerta para Reentrada de Detritos Espaciais
 
-O **SentinelaSul** é uma solução tecnológica desenvolvida para a Global Solution FIAP 2026, com o objetivo de monitorar riscos relacionados à reentrada de detritos espaciais na atmosfera terrestre e alertar órgãos da Defesa Civil de forma rápida e acessível.
+Projeto desenvolvido para a Global Solution FIAP 2026 na disciplina de Edge Computing & Computer Systems.
 
-A proposta busca aumentar a soberania de dados orbitais no Hemisfério Sul, fornecendo uma ferramenta capaz de transformar informações espaciais em alertas práticos para proteção da população.
-
----
-
-# 🎯 Objetivo da Solução
-
-Desenvolver uma estação física baseada em Arduino capaz de receber alertas de risco gerados pelo sistema SentinelaSul e informar operadores da Defesa Civil através de sinais visuais, sonoros e mensagens em display LCD.
-
-A solução permite que os agentes sejam notificados mesmo sem monitorar constantemente um computador.
+O SentinelaSul tem como objetivo auxiliar a Defesa Civil através de uma estação física de alerta baseada em Arduino, capaz de emitir sinais visuais e sonoros quando houver risco de reentrada de detritos espaciais.
 
 ---
 
-# 🛰️ Problema Resolvido
+## 🎯 Objetivo
 
-Atualmente, milhares de objetos orbitam a Terra, incluindo satélites desativados, estágios de foguetes e fragmentos de detritos espaciais.
+Desenvolver uma estação de alerta de baixo custo capaz de:
 
-Quando esses objetos retornam à atmosfera de forma descontrolada, podem representar riscos para regiões habitadas.
-
-O Brasil não possui um sistema acessível e nacional para alertar autoridades locais sobre possíveis reentradas de objetos espaciais.
-
-O SentinelaSul busca preencher essa lacuna.
-
----
-
-# ⚙️ Funcionamento da Estação de Alerta
-
-A estação opera em três níveis de risco:
-
-## 🟢 Estado Normal
-
-* LED Verde ligado.
-* Sistema em monitoramento.
-* Display LCD exibe mensagem de operação normal.
-
-### Mensagem LCD
-
-SENTINELASUL
-Monitorando
+- Monitorar eventos enviados pelo sistema central
+- Alertar operadores da Defesa Civil
+- Emitir alertas visuais através de LEDs
+- Emitir alertas sonoros através de buzzer
+- Exibir informações em LCD 16x2
+- Permitir confirmação do alerta através de botão
 
 ---
 
-## 🟡 Alerta Moderado
+## 🛠 Componentes Utilizados
 
-* LED Amarelo ligado.
-* Display exibe informações do objeto detectado.
-* Necessita atenção da Defesa Civil.
-
-### Mensagem LCD
-
-Objeto: SL-001
-Risco Médio
-
----
-
-## 🔴 Alerta Crítico
-
-* LED Vermelho ligado.
-* Buzzer acionado.
-* Display informa risco iminente.
-
-### Mensagem LCD
-
-ALERTA CRÍTICO
-Impacto: 20 min
+- Arduino Uno
+- LCD 16x2 I2C
+- LED Verde
+- LED Amarelo
+- LED Vermelho
+- Buzzer
+- Push Button
+- Resistores 220Ω
 
 ---
 
-## 🔘 Confirmação do Alerta
+## ⚙ Funcionamento
 
-Quando o agente pressiona o botão de confirmação:
+### 🟢 Estado Normal
 
-* O buzzer é desligado.
-* O alerta permanece registrado.
-* O sistema informa que o alerta foi recebido.
+LED Verde ligado
 
-### Mensagem LCD
-
-Alerta Recebido
-Defesa Civil OK
-
----
-
-# 🛠️ Componentes Utilizados
-
-* Arduino Uno
-* Display LCD 16x2 I2C
-* LED Verde
-* LED Amarelo
-* LED Vermelho
-* Buzzer
-* Push Button
-* Resistores 220Ω
-* Protoboard virtual (Wokwi)
-
----
-
-# 💻 Tecnologias Utilizadas
-
-* Arduino C++
-* Wokwi Simulator
-* GitHub
-* Git
-* LCD I2C Library
-
----
-
-# 📂 Estrutura do Projeto
+LCD:
 
 ```text
-SentinelaSul/
-│
-├── README.md
-├── codigo/
-│   └── SentinelaSul.ino
-│
-├── imagens/
-│   ├── circuito.png
-│   └── funcionamento.png
-│
-└── documentacao/
-    └── relatorio.pdf
+SENTINELASUL
+Monitorando
 ```
 
----
+### 🟡 Alerta Moderado
 
-# ▶️ Como Executar
+LED Amarelo ligado
 
-1. Acesse o simulador Wokwi.
-2. Abra o projeto SentinelaSul.
-3. Clique em "Start Simulation".
-4. Observe os estados de alerta.
-5. Utilize o botão para confirmar o recebimento dos alertas.
+LCD:
 
----
+```text
+Objeto SAT-01
+Risco Medio
+```
 
-# 📊 Benefícios da Solução
+### 🔴 Alerta Crítico
 
-* Baixo custo de implementação.
-* Fácil manutenção.
-* Escalabilidade para municípios de qualquer porte.
-* Alertas visuais e sonoros instantâneos.
-* Integração com sistemas de monitoramento orbital.
-* Apoio à Defesa Civil brasileira.
+LED Vermelho ligado
 
----
+Buzzer ativado
 
-# 🌎 Objetivos de Desenvolvimento Sustentável (ODS)
+LCD:
 
-O projeto contribui diretamente para:
+```text
+ALERTA CRITICO
+Impacto 20min
+```
 
-* ODS 9 – Indústria, Inovação e Infraestrutura
-* ODS 11 – Cidades e Comunidades Sustentáveis
-* ODS 13 – Ação Contra a Mudança Global do Clima
+### 🔘 Confirmação
 
----
+Ao pressionar o botão:
 
-# 👥 Integrantes
-
-Gabriel Souza Alexandre Silva — RM 572607
-
-Marcelo Antônio Scoleso Júnior — RM 571626
-
-João Paulo Francisco de Oliveira — RM 571306
+- Buzzer desligado
+- Alerta confirmado
+- LCD atualizado
 
 ---
 
-# 🎓 Instituição
+## 💻 Tecnologias Utilizadas
 
-FIAP – Faculdade de Informática e Administração Paulista
+- Arduino C++
+- Wokwi Simulator
+- GitHub
+- Git
+
+---
+
+## 🔗 Simulação Wokwi
+
+Cole aqui o link do seu projeto Wokwi.
+
+---
+
+## 👨‍💻 Integrantes
+
+| Nome | RM |
+|--------|--------|
+| Gabriel Souza Alexandre Silva | 572607 |
+| Marcelo Antônio Scoleso Júnior | 571626 |
+| João Paulo Francisco de Oliveira | 571306 |
+
+---
+
+## 🎓 Instituição
+
+FIAP - Engenharia de Software
 
 Global Solution 2026
 
-Curso: Engenharia de Software
-
 Disciplina: Edge Computing & Computer Systems
 
-Professor: Paulo Marcotti e Lucas Demetrius
-
----
-
-# 📜 Licença
-
-Projeto acadêmico desenvolvido exclusivamente para fins educacionais na Global Solution FIAP 2026.
