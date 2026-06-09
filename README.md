@@ -7,6 +7,12 @@ Projeto desenvolvido para a Global Solution FIAP 2026 na disciplina de Edge Comp
 O SentinelaSul tem como objetivo auxiliar a Defesa Civil através de uma estação física de alerta baseada em Arduino, capaz de emitir sinais visuais e sonoros quando houver risco de reentrada de detritos espaciais.
 
 ---
+## 🔗 Simulação Wokwi
+
+Projeto disponível em:
+
+https://wokwi.com/projects/466308906793410561
+
 
 ## 🎯 Objetivo
 
