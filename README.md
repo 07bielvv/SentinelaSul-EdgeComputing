@@ -111,8 +111,22 @@ Ao pressionar o botão:
 - Git
 
 ---
+## 🎥 Demonstração em Vídeo
 
+Assista à apresentação completa do projeto SentinelaSul:
 
+👉 (https://youtu.be/lK1QHzgWM50?si=-PcuzvU_0WGG4I6b)
+
+---
+
+No vídeo são apresentados:
+
+- Funcionamento da estação de alerta
+- Simulação no Wokwi
+- LEDs de status
+- Buzzer de alerta
+- Display LCD
+- Confirmação de alerta pelo botão
 ---
 
 ## 👨‍💻 Integrantes
