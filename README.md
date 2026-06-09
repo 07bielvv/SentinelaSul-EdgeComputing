@@ -48,7 +48,7 @@ LED Verde ligado
 
 LCD:
 
-```text
+```
 SENTINELASUL
 Monitorando
 ```
@@ -59,7 +59,7 @@ LED Amarelo ligado
 
 LCD:
 
-```text
+```
 Objeto SAT-01
 Risco Medio
 ```
@@ -72,7 +72,7 @@ Buzzer ativado
 
 LCD:
 
-```text
+```
 ALERTA CRITICO
 Impacto 20min
 ```
@@ -96,9 +96,6 @@ Ao pressionar o botão:
 
 ---
 
-## 🔗 Simulação Wokwi
-
-Cole aqui o link do seu projeto Wokwi.
 
 ---
 
