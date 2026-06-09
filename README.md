@@ -77,6 +77,22 @@ ALERTA CRITICO
 Impacto 20min
 ```
 
+
+
+
+## 📷 Circuito do Projeto
+
+![Circuito do Projeto](imagens/circuito.png)
+
+O circuito foi desenvolvido no simulador Wokwi utilizando Arduino Uno, LCD I2C, LEDs, buzzer e botão de confirmação.
+
+---
+
+## 🚨 Demonstração de Alerta
+
+![Alerta Crítico](imagens/alerta.png)
+
+Exemplo do sistema exibindo um alerta crítico de possível impacto de detritos espaciais.
 ### 🔘 Confirmação
 
 Ao pressionar o botão:
